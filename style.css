@@ -331,3 +331,69 @@ nav ul li a {
     padding: 10px 0 !important;
   }
 }
+  nav ul{
+     
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      overflow: visible;
+    }
+
+    nav ul li{
+      list-style-type: none;
+      
+    }
+    .x{
+      color: black;
+    }
+   .x:hover{
+   
+    text-decoration: underline;
+    
+    text-underline-offset: 1rem;
+    text-decoration-color:black;
+   }
+
+    nav ul li a{
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .menu-icon{
+      display: none;
+      cursor: pointer;
+    }
+
+    .menu-icon i{
+      color: #fff;
+      font-size: 30px;
+    }
+    #menuList li a {
+  color:black;   /* or your desired color */
+  text-decoration: none;  /* removes underline */
+}
+
+    @media (max-width:600px) {
+      nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #c9d4dd;
+        gap: 0;
+        overflow: hidden;
+      }
+      nav ul li{
+        padding: 20px;
+        padding-top: 0;
+      }
+      .menu-icon{
+        display: block;
+      }
+      #menuList{
+        transition: all 0.5s;
+      }
+    }
