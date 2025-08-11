@@ -11,18 +11,29 @@
     html,body{
       height: 100%;
       width: 100%;
-      background:white
+      background:whitesmoke
     }
 
-    nav{
-      padding: 10px 30px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    background-color: #dbfafa;
-      position: relative;
-      height: 70px;
-    }
+    nav {
+  position: fixed;      /* keep it fixed to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box; /* include padding inside height */
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #dbfafa;
+  z-index: 1000;        /* ensures it sits above page content */
+}
+
+/* push the page content down so it's not hidden under the navbar */
+main, .content {
+  margin-top: 70px;     /* match nav height (adjust if you change height) */
+}
+
 
     .logo{
       color: black;
@@ -97,29 +108,31 @@
       }
     }
 .img{
-  width: 220px;
-  height: 220px;
+  margin-top: 10px;
+  width: 280px;
+  height: 270px;
   object-fit: cover;
   border-radius: 50%;
 }
 .about{
-  margin-top: 50px;
+  margin-top: 60px;
   display: inline-block;
 }
 .about2{
-  margin-left: 30px;
+  margin-left: 40px;
   display: inline-block;
 
-  margin-top: 50px;
+  margin-top: 80px;
 
 }
 .ABOUT{ 
-  box-shadow: 1px 1px 8px rgba(0,0,0,0.2);
-  padding: 20px;
+  box-shadow: 1px 1px 8px rgba(0,0,0,0.5);
+  padding: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:rgb(223, 212, 212)
+  background-color:rgb(223, 212, 212);
+  margin-bottom: 35px;
 }
 .btn1{
   margin-left: -10px;
@@ -158,26 +171,28 @@ border: none;
 }
 
 .a{
-  margin-top: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   
 }
 
 .experience{
-  padding: 20px;
+  padding: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
     background-color:rgb(145, 90, 90);
-    box-shadow: 1px 1px 8px rgba(0,0,0,0.4);
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.5);
 
     
   
   
 }
 .experience1{
-  padding: 10px;
+  padding: 20px;
+  margin-right: 20px;
  
   box-shadow: 1px 1px 8px rgba(0,0,0,0.5);
   
@@ -206,8 +221,9 @@ border: none;
   background-repeat: no-repeat;
 }
 .prb{
-  height: 190px;
+  
   box-shadow: 1px 1px 8px rgba(0,0,0,0.5);
+
 
   border-radius: 10px;
   background-color: white;
@@ -218,10 +234,11 @@ border: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
    background-color:rgb(62, 67, 78);
-   padding: 20px;
+   padding: 40px;
     box-shadow: 1px 1px 8px rgba(0,0,0,0.4);
+    
     
 }
 
@@ -231,7 +248,8 @@ border: none;
 background-color: white;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  padding: 20px;
+  padding: 30px;
+
 transition: background-color 0.3s ease ,color 0.3s ease;
 }
 .prjt1{
@@ -239,14 +257,14 @@ transition: background-color 0.3s ease ,color 0.3s ease;
  background-color: white;
   box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
   border-radius: 20px;
-  padding: 20px;
+  padding: 30px;
 }
 .prjt2{
   display: inline-block;
   background-color: white;
   box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
   border-radius: 20px;
-  padding: 20px;
+  padding: 30px;
 }
 .icon-link i {
   font-size: 24px;
@@ -267,7 +285,7 @@ transition: background-color 0.3s ease ,color 0.3s ease;
   color: #1877f2;
 }
 .contact{
-  padding: 20px;
+padding: 20px;
 display: flex;
 justify-content: center;
 }
@@ -277,12 +295,41 @@ justify-content: center;
   
   align-items: center;
   background-color: #c2c8d1;
-  padding: 10px;
-  width: 350px;
+  padding: 20px;
+  width: 400px;
 box-shadow: 1px 1px 6px rgba(0,0,0,0.7);
   border-radius: 20px;
 }
 .gt:hover{
   background-color: rgb(94, 86, 86);
+
+}
+
+.edu{
+
+  padding: 40px;
+  
+  width: 400px;
+  height: 0150px;
+  background-color: rgb(250, 248, 248);
+  
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+
+
+}
+.Edu{ margin-top: 20px;
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+  margin-bottom: 40px;
+  background-color:rgb(223, 212, 212);
+
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.2);
+    
 
 }
