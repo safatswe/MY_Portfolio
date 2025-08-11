@@ -277,3 +277,57 @@ nav ul li a {
   padding: 30px 60px;
   background-color:rgb(196, 191, 191);
 }
+@media (max-width: 600px) {
+  .ABOUT, .experience {
+    flex-direction: column !important;  /* stack vertically */
+    padding: 20px !important;
+    margin: 0 10px 35px 10px !important; /* reduce side margins */
+  }
+
+  .about, .about2 {
+    display: block !important;
+    margin-left: 0 !important;
+    margin-top: 20px !important;
+    width: 100% !important;
+  }
+
+  .img {
+    width: 150px !important;
+    height: 150px !important;
+    margin: 0 auto 10px auto !important;
+    display: block;
+  }
+
+  .experience1, .prb {
+    margin: 10px auto !important;
+    width: 90% !important;
+  }
+
+  .project {
+    flex-direction: column !important;
+    padding: 20px !important;
+    gap: 20px !important;
+  }
+
+  .prjt, .prjt1, .prjt2 {
+    width: 90% !important;
+    padding: 20px !important;
+    margin: 0 auto !important;
+  }
+
+  .contact-me {
+    width: 90% !important;
+    padding: 20px !important;
+  }
+
+  /* Reduce nav padding and adjust logo and menu spacing */
+  nav {
+    padding: 10px 15px !important;
+  }
+  nav ul {
+    gap: 0 !important;
+  }
+  nav ul li {
+    padding: 10px 0 !important;
+  }
+}
